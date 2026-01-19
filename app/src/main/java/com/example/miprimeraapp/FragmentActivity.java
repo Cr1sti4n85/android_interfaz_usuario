@@ -64,7 +64,9 @@ public class FragmentActivity extends AppCompatActivity implements NavigationVie
                     .commit();
         } else if (id == R.id.nav_profile) {
             // Mostrar Fragmento Perfil
-
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, new ProfileFragment())
+                    .commit();
         } else if (id == R.id.nav_logout) {
             Toast.makeText(this, "Cerrando sesión...", Toast.LENGTH_LONG).show();
         }
