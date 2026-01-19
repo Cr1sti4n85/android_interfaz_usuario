@@ -30,11 +30,11 @@ public class Dashboard extends AppCompatActivity {
         binding.cardUsers.setOnClickListener(v -> {
 
             // Genera la intención de movernos de vista (Activity)
-            Intent intent = new Intent(Dashboard.this, DetalleActivity.class);
+            Intent intent = new Intent(Dashboard.this, UserListActivity.class);
 
              //Enviamos información hacía DetalleActivity
-             intent.putExtra("CLAVE_TITULO", "Gestión de Usuarios");
-             intent.putExtra("CLAVE_DESC", "Aquí podrás administrar las altas, bajas y permisos.");
+//             intent.putExtra("CLAVE_TITULO", "Gestión de Usuarios");
+//             intent.putExtra("CLAVE_DESC", "Aquí podrás administrar las altas, bajas y permisos.");
 
             // Es la instrucción para que nos mueva la app
             startActivity(intent);
