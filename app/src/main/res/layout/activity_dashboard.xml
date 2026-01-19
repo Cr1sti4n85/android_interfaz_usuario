@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_screen">
+    android:background="@color/bg_screen"
+    >
 
     <include
         android:id="@+id/headerContainer"
@@ -98,15 +99,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
-
-    <!-- Ejercicio
-        "El cliente quiere un texto abajo que diga "Versión 1.0".
-        Pero, no queremos ensuciar nuestro activity_dashboard
-
-        1. Crear un component_footer.xml
-        2. Utilizar <include> para agregarlo fuera del ScrollView
-
-        Tip: El componente solo debe tener un texto y un fondo gris.
-     -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
