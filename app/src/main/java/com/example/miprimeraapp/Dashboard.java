@@ -32,9 +32,9 @@ public class Dashboard extends AppCompatActivity {
             // Genera la intención de movernos de vista (Activity)
             Intent intent = new Intent(Dashboard.this, DetalleActivity.class);
 
-            // Enviamos información hacía DetalleActivity
-            // intent.putExtra("CLAVE_TITULO", "Gestión de Usuarios");
-            // intent.putExtra("CLAVE_DESC", "Aquí podrás administrar las altas, bajas y permisos.");
+             //Enviamos información hacía DetalleActivity
+             intent.putExtra("CLAVE_TITULO", "Gestión de Usuarios");
+             intent.putExtra("CLAVE_DESC", "Aquí podrás administrar las altas, bajas y permisos.");
 
             // Es la instrucción para que nos mueva la app
             startActivity(intent);
