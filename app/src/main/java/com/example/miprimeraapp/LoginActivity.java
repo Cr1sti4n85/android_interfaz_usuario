@@ -1,5 +1,6 @@
 package com.example.miprimeraapp;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
@@ -65,6 +66,11 @@ public class LoginActivity extends AppCompatActivity {
         binding.tvWelcome.setTextColor(Color.MAGENTA);
         binding.btnLogin.setEnabled(false);
         binding.btnLogin.setText("Redireccionando...");
+
+        Intent intent = new Intent(this, Dashboard.class);
+        startActivity(intent);
+
+        finish();
     }
 }
 
